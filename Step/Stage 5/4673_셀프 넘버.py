@@ -23,16 +23,16 @@
 def d(n):
     total = 0
     total += n
-    for i in range(len(str(n))):
+    for i in range(len(str(n))):  # n을 문자열로 바꿨기때문에 len(str(n))은 자리수
         total += int(n/10**i) % 10
     return total
 
 
 sn = []
-for i in range(100):
+for i in range(10000):
     sn.append(d(i))
 
-for j in range(100):
+for j in range(10000):
     if j in sn:
         pass
     else:
