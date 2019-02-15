@@ -23,16 +23,16 @@
 def d(n):
     total = 0
     total += n
-    for i in range(0, len(str(n))):
+    for i in range(len(str(n))):
         total += int(n/10**i) % 10
     return total
 
 
 sn = []
-for i in range(10000):
+for i in range(100):
     sn.append(d(i))
 
-for j in range(10000):
+for j in range(100):
     if j in sn:
         pass
     else:
